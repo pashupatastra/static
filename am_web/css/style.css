@@ -224,10 +224,10 @@ button#trigger-overlay{
 #intro{
 	height: 100%;
 	width: 100%;
-	background: #ffffff url(../img/title_intro.svg) center center no-repeat;
+	background: #ffffff url(../icons/title_intro.svg) center center no-repeat;
 }
 .no-svg #intro{
-	background: url(../img/title_intro.png);
+	background: url(../icons/title_intro.png);
 }
 #arrow,
 #arrow2{
