@@ -470,7 +470,7 @@ footer{
 	}
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 568px){
 	.work{
 		width: 165px;
 	}
