@@ -168,12 +168,18 @@ button#trigger-overlay{
 
 .work{
 	fill: #ffffff;
+	width: 220px;
+	height: 40px;
 }
 .profile{
 	fill: #ffffff;
+	width: 283px;
+	height: 40px;
 }
 .contact{
 	fill: #ffffff;
+	width: 341px;
+	height: 40px;
 }
 
 /* Effects */
@@ -461,5 +467,20 @@ footer{
 	section#profile{
 		margin-bottom: 80px;
 		padding-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.work{
+		width: 165px;
+		height: 30px;
+	}
+	.profile{
+		width: 212px;
+		height: 30px;
+	}
+	.contact{
+		width: 256px;
+		height: 30px;
 	}
 }
