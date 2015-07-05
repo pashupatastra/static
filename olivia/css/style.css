@@ -16,6 +16,13 @@ h1{
 .no-svg h1{
 	background: url('../img/logo.png');
 }
+h2{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #333333;
+	font-style: normal;
+}
 p{
 	font-weight: 400;
 	font-style: normal;
@@ -24,11 +31,13 @@ p{
 	font-size: 18px;
 }
 .bold{
-	font-weight:700;
-
+	font-weight: 700;
+}
+.reg{
+	font-weight: 400;
 }
 .thin{
-	font-weight:300;
+	font-weight: 300;
 }
 .smallprint{
 	font-size: 14px;
@@ -319,6 +328,14 @@ iframe{
 }
 .top{
 	margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------ *\
+|* profile
+\* ------------------------------------------------------------ */
+
+.profile{
+	margin: 100px auto 40px auto;
 }
 
 /* ------------------------------------------------------------ *\
