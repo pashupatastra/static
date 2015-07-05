@@ -321,6 +321,19 @@ iframe{
 	margin-bottom: 20px;
 }
 
+/* ------------------------------------------------------------ *\
+|* contact
+\* ------------------------------------------------------------ */
+
+.contact{
+	position: absolute;
+	width: 100%;
+	margin-top: 120px;
+}
+#contact{
+	background-image: url('../img/contact.jpg');
+	background-position: center right;
+}
 
 /* ------------------------------------------------------------ *\
 |* media queries
