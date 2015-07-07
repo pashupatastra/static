@@ -17,14 +17,14 @@ h1{
 	background: url('../img/logo.png');
 }
 h2{
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 1.6;
 	color: #333333;
 	font-style: normal;
 }
 p{
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
 	line-height: 1.6;
 	color: #333333;
@@ -36,9 +36,9 @@ p{
 .reg{
 	font-weight: 400;
 }
-.thin{
+/*.thin{
 	font-weight: 300;
-}
+}*/
 .smallprint{
 	font-size: 14px;
 	font-weight:300;
@@ -183,11 +183,11 @@ li a:hover{
 }
 @media screen and (min-width: 40em) {
 	.nav-collapse li {
-    width:auto;
+    width: auto;
   }
   .nav-collapse a {
-    margin:0;
-    padding:0 20px;
+    margin: 0;
+    padding: 0 20px;
     float: left;
     text-align: center;
     border-bottom: 0;
@@ -331,11 +331,36 @@ iframe{
 }
 
 /* ------------------------------------------------------------ *\
+|* prints
+\* ------------------------------------------------------------ */
+
+#prints{
+	margin-top: 70px;
+}
+.caption p{
+	margin: 20px 0 0 0;
+	font-size: 16px;
+}
+p.process{
+	margin-top: 0;
+}
+p.sold{
+	color: red;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	margin-top: 0;
+}
+
+/* ------------------------------------------------------------ *\
 |* profile
 \* ------------------------------------------------------------ */
 
 .profile{
-	margin: 100px auto 40px auto;
+	margin: 110px auto 40px auto;
+}
+#exhibitions{
+	padding-left: 20px;
 }
 
 /* ------------------------------------------------------------ *\
@@ -372,12 +397,16 @@ iframe{
 	.no-svg .landing{
 		background: url('../img/landing_title_small.png') center center no-repeat;
 	}
+	#nav,
+	#nav_home{
+		height: 60px;
+	}
 	.nav-container{
 		width: 100%;
 		margin: 0;
 	}
 	.nav-collapse a.border{
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	.nav-collapse,
 	.nav-collapse ul {
@@ -395,5 +424,17 @@ iframe{
 	footer{
 		width: 100%;
 		padding: 20px;
+	}
+	.smallprint{
+		margin-bottom: 20px;
+	}
+	.row{margin-bottom: 0;}
+}
+@media screen and (max-width:767px){
+	#exhibitions{
+		padding-left: 0px;
+	}
+	.right_print{
+		margin-top: 20px;
 	}
 }
