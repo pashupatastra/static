@@ -431,6 +431,10 @@ p.sold{
 	.row{
 		margin-bottom: 0;
 	}
+	.title{
+		padding: 20px 0 0 0;
+	}
+	#prints .omega,
 	.imgwrap.omega{
 		margin-bottom: 20px;
 	}
