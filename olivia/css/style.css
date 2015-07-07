@@ -431,6 +431,12 @@ p.sold{
 	.row{
 		margin-bottom: 0;
 	}
+	.imgtext{
+		padding: 20px;
+	}
+	.cover{
+		background-attachment: scroll;
+	}
 	.title{
 		padding: 20px 0 0 0;
 	}
