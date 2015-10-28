@@ -1,2 +1,0 @@
-# static
-Arjun Mahadevan – Static
