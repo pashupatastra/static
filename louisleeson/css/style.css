@@ -316,7 +316,7 @@ div.mc-image {
 	text-transform: uppercase;
 	padding: 0;
 }
-#portfolio,
+#editorial,
 #portraits,
 #sierra-leone,
 #india{
@@ -330,16 +330,16 @@ div.mc-image {
 	line-height: 627px;
 }
 
-/* Portfolio ------------------------------------*/
+/* Editorial ------------------------------------*/
 
-#portfolio h2{
+#editorial h2{
 	text-align: center;
 	font-size: 60px;
 	font-weight: 700;
 	text-transform: uppercase;
 	padding: 220px 0 0 0;
 }
-#portfolio p{
+#editorial p{
 	text-align: center;
 	font-size: 18px;
 	font-weight: 400;
@@ -559,7 +559,7 @@ footer a:hover{
 	#india h2{
 		line-height: 499px;
 	}
-	#portfolio h2{
+	#editorial h2{
 		padding: 170px 0 20px 0;
 	}
 	.gallery{
@@ -593,11 +593,11 @@ footer a:hover{
 		font-size: 30px;
 		line-height: 280px;
 	}
-	#portfolio h2{
+	#editorial h2{
 		font-size: 30px;
 		padding: 76px 0 0 0;
 	}
-	#portfolio p{
+	#editorial p{
 		font-size: 16px;
 		padding-bottom: 10px;
 	}
@@ -659,11 +659,11 @@ footer a:hover{
 		/*padding-top: 76px;*/
 		line-height: 200px;
 	}
-	#portfolio h2{
+	#editorial h2{
 		font-size: 24px;
 		padding: 40px 0 0 0;
 	}
-	#portfolio p{
+	#editorial p{
 		font-size: 14px;
 		padding-bottom: 4px;
 		display: block;
