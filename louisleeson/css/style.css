@@ -322,12 +322,22 @@ div.mc-image {
 #india{
 	background: #000000;
 }
-
 #portraits h2,
 #sierra-leone h2,
-#india h2{
+#india h2,
+#opera h2{
 	/*padding-top: 224px;*/
 	line-height: 627px;
+}
+
+#opera{
+	background-image: url(../images/gallery_opera/000.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 100%;
+}
+#opera h2{
+	font-size: 48px;
 }
 
 /* Editorial ------------------------------------*/
@@ -356,7 +366,8 @@ div.mc-image {
 }
 .external-captions {
   color: #ffffff;
-  text-align: center;
+  /*text-align: center;*/
+  text-align: left;
   margin-top: 20px;
 }
 
@@ -419,8 +430,9 @@ div#lightbox img{
 	transition: all 0.3s ease-in;
 }
 #content_thumb img:hover{
-	top: -3px;
-	box-shadow: 0 5px 3px rgba(0,0,0,0.25);
+	/*top: -3px;
+	box-shadow: 0 5px 3px rgba(0,0,0,0.25);*/
+	opacity: 0.2;
 }
 
 /* Toggle ---------------------------------------*/
@@ -577,8 +589,12 @@ footer a:hover{
 	}
 	#portraits h2,
 	#sierra-leone h2,
-	#india h2{
+	#india h2,
+	#opera h2{
 		line-height: 499px;
+	}
+	#opera h2{
+		font-size: 36px;
 	}
 	#editorial h2{
 		padding: 170px 0 20px 0;
@@ -617,6 +633,10 @@ footer a:hover{
 	#editorial h2{
 		font-size: 30px;
 		padding: 76px 0 0 0;
+	}
+	#opera h2{
+		font-size: 24px;
+		line-height: 280px;
 	}
 	#editorial p{
 		font-size: 16px;
@@ -683,6 +703,10 @@ footer a:hover{
 	#editorial h2{
 		font-size: 24px;
 		padding: 40px 0 0 0;
+	}
+	#opera h2{
+		font-size: 18px;
+		line-height: 200px;
 	}
 	#editorial p{
 		font-size: 14px;
