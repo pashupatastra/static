@@ -1,0 +1,40 @@
+@font-face{
+	font-family:Circular;
+	src:url(../fonts/lineto-circular-book.eot);
+	src:url(../fonts/lineto-circular-book.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/lineto-circular-book.woff) format('woff'),
+	url(../fonts/lineto-circular-book.ttf) format('truetype'),
+	url(../fonts/lineto-circular-book.svg#CircularBook) format('svg');
+	font-weight:400;
+	font-style:normal
+}
+@font-face{
+	font-family:Circular;
+	src:url(../fonts/lineto-circular-bookitalic.eot);
+	src:url(../fonts/lineto-circular-bookitalic.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/lineto-circular-bookitalic.woff) format('woff'),
+	url(../fonts/lineto-circular-bookitalic.ttf) format('truetype'),
+	url(../fonts/lineto-circular-bookitalic.svg#CircularBookItalic) format('svg');
+	font-weight:400;
+	font-style:italic
+}
+@font-face{
+	font-family:Circular;
+	src:url(../fonts/lineto-circular-bold.eot);
+	src:url(../fonts/lineto-circular-bold.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/lineto-circular-bold.woff) format('woff'),
+	url(../fonts/lineto-circular-bold.ttf) format('truetype'),
+	url(../fonts/lineto-circular-bold.svg#CircularBold) format('svg');
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Circular;
+	src:url(../fonts/lineto-circular-bolditalic.eot);
+	src:url(../fonts/lineto-circular-bolditalic.eot?#iefix) format('embedded-opentype'),
+	url(../fonts/lineto-circular-bolditalic.woff) format('woff'),
+	url(../fonts/lineto-circular-bolditalic.ttf) format('truetype'),
+	url(../fonts/lineto-circular-bolditalic.svg#CircularBoldItalic) format('svg');
+	font-weight:700;
+	font-style:italic
+}
