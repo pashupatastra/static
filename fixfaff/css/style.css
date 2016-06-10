@@ -117,8 +117,6 @@ select.form-control{
 	background-size: 26px 8px;
 	background-position: right 50%;
 }
-
-
 input.btn{
 	margin-top: 20px;
 	border-radius: 0;
@@ -126,8 +124,6 @@ input.btn{
 	transition: 0.5s ease;
 	font-weight: 700;
 	font-size: 16px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 input.btn:hover{
 	background-color: #5ba7a5;
@@ -135,6 +131,27 @@ input.btn:hover{
 }
 form{
 	margin-bottom: 80px;
+}
+/* homepage form */
+form.request{
+	margin: 20px 0 0 80px;
+}
+form.request input{
+	padding: 5px 10px;
+	border: 0;
+	margin-right: 10px;
+	width: 320px;
+}
+form.request button{
+	padding: 5px 10px;
+	border: 0;
+	background-color: #e4405b;
+	color: #ffffff;
+	transition: 0.5s ease;
+	font-weight: 700;
+}
+form.request button:hover{
+	background-color: #5ba7a5;
 }
 
 @media only screen and (max-width: 720px) {

@@ -18,7 +18,6 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/circular.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/component.css">
 
 		<link rel="shortcut icon" href="img/favicon.png">
 		<link rel="apple-touch-icon" href="img/icon_57.png">
@@ -27,7 +26,7 @@
 		<link rel="apple-touch-icon" sizes="144x144" href="img/icon_144.png">
 	</head>
 	<body>
-		<div id="container2">
+		<div id="container">
 			<nav>
 				<a href="http://www.fixfaff.com/">Home</a>
 				&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -47,9 +46,14 @@
 				<p><strong>Be one of the first 500 people to try it.</strong></p>
 				<p>We've just launched a preview. Sign up below to get access.</p>
 			</div>
-			<div class="button">
+			<!-- <div class="button">
 				<a class="signup" href="signup/">Request Invite &#8594;</a>
-			</div>
+			</div> -->
+			<form class="request">
+				<input type="text" name="email" placeholder="Email">
+				<button type="submit" name="submit">Request Invite</button>
+			</form>
+
 			<small>&copy; 2016 Fixfaff. All rights reserved.</small>
 		</div>
 	</body>
