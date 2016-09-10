@@ -1,0 +1,727 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@font-face {
+  font-family: "responsivenav";
+  src:url("../icons/responsivenav.eot");
+  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body{
+  height: 100%;
+}
+body{
+	font-family: "Montserrat", "Helvetica", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000000;
+}
+h1{
+	float: left;
+	line-height: 60px;
+	font-weight: 700;
+	font-size: 24px;
+}
+h2{
+	font-size: 72px;
+	line-height: 72px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+h3{
+	font-weight: 700;
+	font-size: 24px;
+}
+h4{
+	font-size: 18px;
+	font-weight: 700;
+}
+p{
+	padding: 20px 0 0 0;
+	line-height: 1.6;
+}
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Header ---------------------------------------*/
+
+header{
+	position: fixed;
+	background: rgba(255,255,255,0.8);
+	height: 60px;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Nav Function ---------------------------------*/
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 40px;
+  float: right;
+}
+.nav-toggle:before {
+  color: #000000;
+  font-family: "responsivenav", sans-serif;
+  font-size: 24px;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.nav-toggle.active::before {
+  font-size: 24px;
+  content:"x";
+}
+
+/* Nav ------------------------------------------*/
+
+.nav-container{
+	width: 960px;
+	margin: 0 auto;
+}
+nav{
+	float: right;
+	top: 0;
+	margin-right: 20px;
+	z-index: 200;
+	transition: all 0.5s ease;
+}
+li a{
+	height: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+	transition: all 0.3s ease;
+}
+li a:hover{
+	color: #aaaaaa;
+	background: #ffffff;
+}
+a#facebook{
+	vertical-align: middle;
+	width: 10px;
+	height: 60px;
+	background-image: url(../icons/icon_fb.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 9px 18px;
+	padding: 0 26px 0 26px;
+	transition: all 0.3s ease;
+	text-indent: -9999px;
+}
+a#facebook:hover{
+	background-color: #ffffff;
+	background-image: url(../icons/icon_fb_hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 9px 18px;
+}
+a#twitter{
+	vertical-align: middle;
+	width: 26px;
+	height: 60px;
+	background-image: url(../icons/icon_tw.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 26px 18px;
+	padding: 0 30px 0 30px;
+	transition: all 0.3s ease;
+	text-indent: -9999px;
+}
+a#twitter:hover{
+	background-color: #ffffff;
+	background-image: url(../icons/icon_tw_hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 26px 18px;
+}
+a#instagram{
+	vertical-align: middle;
+	width: 18px;
+	height: 60px;
+	background: url(../icons/icon_ig.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 18px 18px;
+	padding: 0 30px 0 30px;
+	transition: all 0.3s ease;
+	text-indent: -9999px;
+}
+a#instagram:hover{
+	background-color: #ffffff;
+	background-image: url(../icons/icon_ig_hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 18px 18px;
+}
+
+/* Responsive Nav -------------------------------*/
+
+.nav-collapse,
+.nav-collapse * {
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  float: right;
+}
+.nav-collapse li {
+  float: right;
+  width: 100%;
+}
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: auto;
+  }
+}
+.nav-collapse a {
+  color: #000000;
+  text-decoration: none;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  background: rgba(255,255,255,0.8);
+  padding: 0 20px;
+  float: left;
+}
+.nav-collapse a.border{
+	border-top: 1px solid #000000;
+}
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    margin: 0;
+    padding: 0 20px 0 20px;
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+    background: transparent;
+  }
+  .nav-collapse a.border{
+		border-top: 0;
+	}
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+
+/* Slider ---------------------------------------*/
+
+#slider{
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+	background: transparent;
+}
+
+.mc-hide-scrolls{
+	overflow:hidden;
+}
+
+body .mc-cycle {
+	height:100%;
+	left:0;
+	overflow:hidden;
+	top:0;
+	width:100%;
+	z-index:-1;
+}
+
+div.mc-image {
+	-webkit-transition: opacity 1s ease-in-out; 
+	-moz-transition: opacity 1s ease-in-out; 
+	-o-transition: opacity 1s ease-in-out; 
+	transition: opacity 1s ease-in-out;
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position:top center;
+	background-repeat:no-repeat;
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+
+.mc-old-browser .mc-image {
+	overflow:hidden;
+}
+
+/* Project Slider -------------------------------*/
+
+.gallery{
+	padding: 40px 0 60px 0;
+	width: 100%;
+	height: auto;
+	background: #222222;
+	margin-top: 60px;
+}
+#project_slides img{
+	width:940px;
+	height:auto;
+}
+#project_slides img#portrait{
+	width:418px;
+	height:627px;
+	margin-left:261px;
+}
+.gallery a{
+	height: auto;
+}
+.gallery a:hover{
+	background-color:transparent;
+}
+
+/* Project Intros -------------------------------*/
+
+.slide_intro{
+	height: 627px;
+}
+.slide_intro h2{
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0;
+}
+#editorial,
+#portraits,
+#sierra-leone,
+#india,
+#opera,
+#gambia{
+	background: #000000;
+}
+#portraits h2,
+#sierra-leone h2,
+#india h2,
+#opera h2{
+	/*padding-top: 224px;*/
+	line-height: 627px;
+}
+#opera h2{
+	font-size: 48px;
+}
+#gambia h2{
+	font-size: 60px;
+	padding-top: 206px;
+}
+
+/* Editorial ------------------------------------*/
+
+#editorial h2{
+	text-align: center;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 220px 0 0 0;
+}
+#editorial p{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+/* Slippry Styles -------------------------------*/
+
+.portfolio .sy-controls {
+  display: block;
+}
+.portfolio .sy-pager {
+  margin: 1.5em 0;
+}
+.external-captions {
+  color: #ffffff;
+  /*text-align: center;*/
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Sections -------------------------------------*/
+
+section{
+	background: #ffffff;
+}
+#galleries{
+	padding: 80px 0 60px 0;
+	border-top: 1px solid #000000;
+}
+.story{
+	background-color: #eeeeee;
+	color: #333333;
+	height: 120px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+.story p{
+	padding: 0;
+	line-height: 120px;
+}
+a.story:hover{
+	background: #000000;
+	color: #ffffff;
+}
+#spacer{
+	height: 60px;
+	width: 100%;
+	background: #ffffff;
+}
+#about{
+	width: 100%;
+	border-top: 1px solid #000000;
+	padding: 80px 0 40px 0;
+}
+
+/* Lightbox -------------------------------------*/
+
+div#lightbox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	z-index: 200;
+	display: none;
+}
+div#lightbox img{
+	height: 85%;
+	margin: 50px 0 50px 0;
+}
+#content_thumb img{
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	transition: all 0.3s ease-in;
+}
+#content_thumb img:hover{
+	/*top: -3px;
+	box-shadow: 0 5px 3px rgba(0,0,0,0.25);*/
+	opacity: 0.2;
+}
+
+/* Toggle ---------------------------------------*/
+
+#icon_full{
+	width: 32px;
+	height: 32px;
+	background-image: url(../icons/icon_full_inactive.png);
+	background-size: 32px 32px;
+	margin-left: 20px;
+	display: inline-block;
+	float: right;
+	transition: all 0.3s ease;
+}
+#icon_full:hover{
+	background-image: url(../icons/icon_full_active.png);
+}
+#icon_thumb{
+	width: 32px;
+	height: 32px;
+	background-image: url(../icons/icon_thumb_inactive.png);
+	background-size: 32px 32px;
+	display: inline-block;
+	float: right;
+	transition: all 0.3s ease;
+}
+#icon_thumb:hover{
+	background-image: url(../icons/icon_thumb_active.png);
+}
+div.thumb{
+	position: relative;
+	height: 93px;
+	overflow: hidden;
+}
+div.thumb img.thump{
+	position: absolute;
+	top: 50%;
+	margin-top: -46px;
+}
+div.thumb img.thump1{
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+}
+div.thumb img.thump2{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+}
+div.thumb img.thump3{
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+}
+
+/* Footer ---------------------------------------*/
+
+footer{
+	width: 100%;
+	background: #000000;
+	color: #ffffff;
+	margin: 0;
+	padding: 40px 0 20px 0;
+	height: auto;
+}
+footer a{
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.3s ease;
+}
+footer a:hover{
+	color: #999999;
+}
+#contact{
+	padding: 0 0 20px 0;
+}
+#copyright{
+	width: 100%;
+	height: 40px;
+	line-height: 80px;
+	border-top: 1px solid #ffffff;
+	font-size: 12px;
+}
+
+/*-------------------------------------------------
+-------------------- Responsive -------------------
+-------------------------------------------------*/
+
+@media screen and (max-width: 1000px){
+	h1{
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	header{
+		height: 40px;
+	}
+	h1{
+		line-height: 40px;
+	}
+	h2{
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.nav-container{
+		width: 100%;
+		margin: 0;
+	}
+	li a{
+		height: 40px;
+		line-height: 40px;
+	}
+	a#facebook{
+		vertical-align: middle;
+		width: 9px;
+		height: 40px;
+		padding: 0 20px 0 20px;
+		transition: all 0.3s ease;
+		text-indent: -9999px;
+	}
+	a#twitter{
+		vertical-align: middle;
+		width: 26px;
+		height: 40px;
+		padding-left: 26px;
+		transition: all 0.3s ease;
+		text-indent: -9999px;
+	}
+	a#instagram{
+		vertical-align: middle;
+		width: 18px;
+		height: 40px;
+		padding-left: 26px;
+		transition: all 0.3s ease;
+		text-indent: -9999px;
+	}
+	#project_slides img#portrait{
+		width:276px;
+		height:413px;
+		margin-left:172px;
+	}
+	.slide_intro{
+		width: 748px;
+		height: 499px;
+	}
+	.slide_intro p{
+	  line-height: 1.6;
+		font-size: 16px;
+		padding: 0 80px 20px 60px;
+	}
+	.p2{
+		display:none;
+	}
+	#portraits h2,
+	#sierra-leone h2,
+	#india h2,
+	#opera h2{
+		line-height: 499px;
+	}
+	#opera h2{
+		font-size: 36px;
+	}
+	#gambia h2{
+		padding-top: 160px;
+	}
+	#editorial h2{
+		padding: 170px 0 20px 0;
+	}
+	.gallery{
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#film h3{
+		padding: 20px 0 20px 0;
+	}
+	h4{
+		padding-top:20px;
+	}
+	#project_slides img#portrait{
+		width:187px;
+		height:280px;
+		margin-left:117px;
+	}
+	.slide_intro p{
+		font-size: 14px;
+		padding: 0 0 20px 0;
+	}
+	.slide_intro{
+		width: 420px;
+		height: 280px;
+	}
+	#portraits h2,
+	#sierra-leone h2,
+	#india h2{
+		font-size: 30px;
+		line-height: 280px;
+	}
+	#editorial h2{
+		font-size: 30px;
+		padding: 76px 0 0 0;
+	}
+	#opera h2{
+		font-size: 24px;
+		line-height: 280px;
+	}
+	#gambia h2{
+		font-size: 30px;
+		padding-top: 90px;
+		line-height: 1.2;
+	}
+	#editorial p{
+		font-size: 16px;
+		padding-bottom: 10px;
+	}
+	.story{
+		margin-top: 20px;
+	}
+	#content_thumb{
+		display: none !important;
+	}
+	#content_full{
+		display: block !important;
+	}
+	#icons_toggle{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 640px){
+	a#facebook,
+	a#twitter,
+	a#instagram{
+		vertical-align: middle;
+		width: 100%;
+		height: auto;
+		background: rgba(255,255,255,0.8);
+		padding: 0 20px;
+		transition: all 0.3s ease;
+		text-indent: 0;
+	}
+	a#facebook:hover,
+	a#twitter:hover,
+	a#instagram:hover{
+		background: #ffffff;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#project_slides img#portrait{
+		width:133px;
+		height:200px;
+		margin-left:84px;
+	}
+	.slide_intro h2{
+		font-size: 24px;
+		/*padding: 60px 20px 20px 20px;*/
+		text-align: center;
+	}
+	.slide_intro p{
+		display:none;
+	}
+	.slide_intro{
+		width: 300px;
+		height: 200px;
+	}
+	#portraits h2,
+	#sierra-leone h2,
+	#india h2{
+		font-size: 24px;
+		/*padding-top: 76px;*/
+		line-height: 200px;
+	}
+	#editorial h2{
+		font-size: 24px;
+		padding: 40px 0 0 0;
+	}
+	#opera h2{
+		font-size: 18px;
+		line-height: 200px;
+	}
+	#gambia h2{
+		font-size: 24px;
+		padding-top: 60px;
+	}
+	#editorial p{
+		font-size: 14px;
+		padding-bottom: 4px;
+		display: block;
+	}
+}
