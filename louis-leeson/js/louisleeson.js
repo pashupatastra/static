@@ -24,18 +24,6 @@ $(function() {
 	});
 });
 
-// lightbox on / swap image
-
-$("div#content_thumb img").on("click", function(){
-	var imageSrc = $(this).attr("src");
-	$("div#lightbox img").attr("src", imageSrc);
-	$("div#lightbox").fadeIn(600);
-});
-// lightbox off
-	$("div#lightbox").on("click", function(){
-	$("div#lightbox").fadeOut();
-});
-
 // toggle contact sheet
 
 $(document).ready(function(){

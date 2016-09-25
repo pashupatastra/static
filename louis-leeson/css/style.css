@@ -50,6 +50,9 @@ a{
 	color: #000000;
 	text-decoration: none;
 }
+strong{
+	font-weight: 700;
+}
 
 /* Header ---------------------------------------*/
 
@@ -202,7 +205,8 @@ a#instagram:hover{
   float: right;
   width: 100%;
 }
-@media screen and (min-width: 40em) {
+/*@media screen and (min-width: 40em)*/
+@media screen and (min-width: 680px) {
   .nav-collapse li {
     width: auto;
   }
@@ -219,7 +223,8 @@ a#instagram:hover{
 .nav-collapse a.border{
 	border-top: 1px solid #000000;
 }
-@media screen and (min-width: 40em) {
+/*@media screen and (min-width: 40em)*/
+@media screen and (min-width: 680px) {
   .nav-collapse a {
     margin: 0;
     padding: 0 20px 0 20px;
@@ -288,17 +293,19 @@ div.mc-image {
 	background: #222222;
 	margin-top: 60px;
 }
-#project_slides img{
-	width:940px;
-	height:auto;
+#project_slides li{
+	height: 627px;
 }
-#project_slides img#portrait{
-	width:418px;
-	height:627px;
-	margin-left:261px;
+#project_slides li a img{
+	width: auto;
+	max-height: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .gallery a{
-	height: auto;
+	width: 100%;
+	height: 100%;
 }
 .gallery a:hover{
 	background-color:transparent;
@@ -316,43 +323,75 @@ div.mc-image {
 	text-transform: uppercase;
 	padding: 0;
 }
-#editorial,
+#diaspora,
 #portraits,
 #sierra-leone,
-#india,
-#opera,
+#ebola,
+#bekaa,
 #gambia{
 	background: #000000;
 }
-#portraits h2,
-#sierra-leone h2,
-#india h2,
-#opera h2{
-	/*padding-top: 224px;*/
+#portraits h2{
 	line-height: 627px;
 }
-#opera h2{
-	font-size: 48px;
+#ebola h2{
+	padding-top: 60px;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+#ebola p{
+	color: #ffffff;
+	font-size: 16px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+#sierra-leone h2{
+	padding-top: 60px;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+#sierra-leone p{
+	color: #ffffff;
+	font-size: 16px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+#sierra-leone p.caption{
+	font-size: 12px;
+	text-align: right;
 }
 #gambia h2{
-	font-size: 60px;
-	padding-top: 206px;
+	padding-top: 60px;
+	font-size: 36px;
+	letter-spacing: 2px;
 }
-
-/* Editorial ------------------------------------*/
-
-#editorial h2{
-	text-align: center;
-	font-size: 60px;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 220px 0 0 0;
-}
-#editorial p{
-	text-align: center;
-	font-size: 18px;
-	font-weight: 400;
+#gambia p{
 	color: #ffffff;
+	font-size: 15px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+#bekaa h2{
+	padding-top: 60px;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+#bekaa p{
+	color: #ffffff;
+	font-size: 16px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+#diaspora h2{
+	padding-top: 60px;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+#diaspora p{
+	color: #ffffff;
+	font-size: 16px;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 /* Slippry Styles -------------------------------*/
@@ -365,8 +404,8 @@ div.mc-image {
 }
 .external-captions {
   color: #ffffff;
-  /*text-align: center;*/
-  text-align: left;
+  text-align: center;
+  /*text-align: left;*/
   margin-top: 20px;
 }
 
@@ -380,19 +419,54 @@ section{
 	border-top: 1px solid #000000;
 }
 .story{
-	background-color: #eeeeee;
-	color: #333333;
-	height: 120px;
-	text-align: center;
-	transition: all 0.3s ease;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+.story_text{
+	position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  display: table; 
 }
 .story p{
-	padding: 0;
-	line-height: 120px;
-}
-a.story:hover{
-	background: #000000;
+	padding: 0 10px;
+	background-color: rgba(0,0,0,0.7);
 	color: #ffffff;
+	transition: all 0.3s ease;
+	display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+  line-height: 1.4;
+}
+a.story p:hover{
+	opacity: 0;
+}
+.gallery_one{
+	background: url(../images/gallery_portraits/000_thumb.jpg);
+	background-size: cover;
+}
+.gallery_two{
+	background: url(../images/gallery_ebola/000_thumb.jpg);
+	background-size: cover;
+}
+.gallery_three{
+	background: url(../images/gallery_sierra/000_thumb.jpg);
+	background-size: cover;
+}
+.gallery_four{
+	background: url(../images/gallery_gambia/000_thumb.jpg);
+	background-size: cover;
+}
+.gallery_five{
+	background: url(../images/gallery_bekaa/000_thumb.jpg);
+	background-size: cover;
+}
+.gallery_six{
+	background: url(../images/gallery_diaspora/000_thumb.jpg);
+	background-size: cover;
 }
 #spacer{
 	height: 60px;
@@ -407,31 +481,155 @@ a.story:hover{
 
 /* Lightbox -------------------------------------*/
 
-div#lightbox{
+.featherlight {
+	display: none;
 	position: fixed;
-	top: 0;
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
 	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.8);
+	z-index: 2147483647;
 	text-align: center;
-	z-index: 200;
+	white-space: nowrap;
+	cursor: pointer;
+	background: #333333;
+	background: rgba(0, 0, 0, 0);
+}
+.featherlight:last-of-type {
+	background: rgba(0, 0, 0, 0.8);
+}
+.featherlight:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+.featherlight .featherlight-content {
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+	overflow: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+	max-height: 95%;
+	cursor: auto;
+	white-space: normal;
+}
+.featherlight .featherlight-inner {
+	display: block;
+}
+
+.featherlight .featherlight-close-icon {
 	display: none;
 }
-div#lightbox img{
-	height: 85%;
-	margin: 50px 0 50px 0;
+.featherlight .featherlight-image {
+	width: 100%;
 }
-#content_thumb img{
-	cursor: pointer;
-	position: relative;
+.featherlight-iframe .featherlight-content {
+	border-bottom: 0;
+	padding: 0;
+}
+.featherlight iframe {
+	border: none;
+}
+.featherlight * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.featherlight-next,
+.featherlight-previous {
+	display: block;
+	position: absolute;
 	top: 0;
-	transition: all 0.3s ease-in;
+	right: 0;
+	bottom: 0;
+	width: 60px;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+	background: rgba(0,0,0,0);
 }
-#content_thumb img:hover{
-	/*top: -3px;
-	box-shadow: 0 5px 3px rgba(0,0,0,0.25);*/
-	opacity: 0.2;
+.featherlight-previous {
+	left: 0;
+}
+.featherlight-next:hover{
+	background: url(../icons/arrow_next.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px 40px;
+}
+.no-svg .featherlight-next:hover{
+	background: url(../icons/arrow_next.png);
+}
+.featherlight-previous:hover{
+	background: url(../icons/arrow_prev.svg);	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40px 40px;
+}
+.no-svg .featherlight-previous:hover{
+	background: url(../icons/arrow_prev.png);
+}
+.featherlight-next span,
+.featherlight-previous span {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 50%;
+	margin-top: -40px;
+	opacity: 0;
+}
+.featherlight-next span {
+	right: 0;
+	left: auto;
+}
+.featherlight-next:hover span,
+.featherlight-previous:hover span {
+	display: inline-block;
+}
+.featherlight-loading .featherlight-previous, 
+.featherlight-loading .featherlight-next {
+	display:none;
+}
+@media only screen and (max-device-width: 1024px){
+	.featherlight-next:hover,
+	.featherlight-previous:hover {
+		background: none;
+	}
+	.featherlight-next span,
+	.featherlight-previous span {
+		display: block;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.featherlight .featherlight-content {
+		margin-left: 10px;
+		margin-right: 10px;
+		max-height: 98%;
+	}
+	.featherlight-next,
+	.featherlight-previous {
+		top: 0;
+		right: 0;
+		left: 80%;
+	}
+	.featherlight-previous {
+		left: 0;
+		right: 80%;
+	}
+	.featherlight-next span,
+	.featherlight-previous span {
+		margin-top: -30px;
+		font-size: 40px;
+	}
 }
 
 /* Toggle ---------------------------------------*/
@@ -461,31 +659,7 @@ div#lightbox img{
 #icon_thumb:hover{
 	background-image: url(../icons/icon_thumb_active.png);
 }
-div.thumb{
-	position: relative;
-	height: 93px;
-	overflow: hidden;
-}
-div.thumb img.thump{
-	position: absolute;
-	top: 50%;
-	margin-top: -46px;
-}
-div.thumb img.thump1{
-	position: absolute;
-	top: 50%;
-	margin-top: -5px;
-}
-div.thumb img.thump2{
-	position: absolute;
-	top: 50%;
-	margin-top: -20px;
-}
-div.thumb img.thump3{
-	position: absolute;
-	top: 50%;
-	margin-top: -30px;
-}
+
 
 /* Footer ---------------------------------------*/
 
@@ -569,10 +743,8 @@ footer a:hover{
 		transition: all 0.3s ease;
 		text-indent: -9999px;
 	}
-	#project_slides img#portrait{
-		width:276px;
-		height:413px;
-		margin-left:172px;
+	#project_slides li{
+		height: 499px;
 	}
 	.slide_intro{
 		width: 748px;
@@ -586,20 +758,71 @@ footer a:hover{
 	.p2{
 		display:none;
 	}
-	#portraits h2,
-	#sierra-leone h2,
-	#india h2,
-	#opera h2{
-		line-height: 499px;
+	.story{
+		height: 236px;
+		margin: 0 10px 20px 10px;
 	}
-	#opera h2{
-		font-size: 36px;
+	#portraits h2{
+
+	}
+	#ebola h2{
+		padding-top: 40px;
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+	#ebola p{
+		color: #ffffff;
+		font-size: 14px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	#sierra-leone h2{
+		padding-top: 40px;
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+	#sierra-leone p{
+		color: #ffffff;
+		font-size: 13px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	#sierra-leone p.caption{
+		font-size: 10px;
+		text-align: right;
 	}
 	#gambia h2{
-		padding-top: 160px;
+		padding-top: 40px;
+		font-size: 30px;
+		letter-spacing: 2px;
 	}
-	#editorial h2{
-		padding: 170px 0 20px 0;
+	#gambia p{
+		color: #ffffff;
+		font-size: 13px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	#bekaa h2{
+		padding-top: 40px;
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+	#bekaa p{
+		color: #ffffff;
+		font-size: 13px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	#diaspora h2{
+		padding-top: 40px;
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+	#diaspora p{
+		color: #ffffff;
+		font-size: 14px;
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 	.gallery{
 		margin-top: 40px;
@@ -613,10 +836,8 @@ footer a:hover{
 	h4{
 		padding-top:20px;
 	}
-	#project_slides img#portrait{
-		width:187px;
-		height:280px;
-		margin-left:117px;
+	#project_slides li{
+		height: 280px;
 	}
 	.slide_intro p{
 		font-size: 14px;
@@ -626,31 +847,48 @@ footer a:hover{
 		width: 420px;
 		height: 280px;
 	}
-	#portraits h2,
-	#sierra-leone h2,
-	#india h2{
-		font-size: 30px;
-		line-height: 280px;
+	#portraits h2{
+
 	}
-	#editorial h2{
-		font-size: 30px;
-		padding: 76px 0 0 0;
-	}
-	#opera h2{
+	#ebola h2{
+		padding: 110px 30px 0 30px;
 		font-size: 24px;
-		line-height: 280px;
+		letter-spacing: 1px;
+		line-height: 1.4;
+	}
+	#sierra-leone h2{
+		padding: 110px 30px 0 30px;
+		font-size: 24px;
+		letter-spacing: 1px;
+		line-height: 1.4;
 	}
 	#gambia h2{
-		font-size: 30px;
-		padding-top: 90px;
-		line-height: 1.2;
+		padding: 110px 30px 0 30px;
+		font-size: 24px;
+		letter-spacing: 1px;
+		line-height: 1.4;
 	}
-	#editorial p{
-		font-size: 16px;
-		padding-bottom: 10px;
+	#bekaa h2{
+		padding: 110px 30px 0 30px;
+		font-size: 24px;
+		letter-spacing: 1px;
+		line-height: 1.4;
+	}
+	#diaspora h2{
+		padding: 130px 30px 0 30px;
+		font-size: 24px;
+		letter-spacing: 1px;
+	}
+	#ebola p,
+	#sierra-leone p,
+	#gambia p,
+	#bekaa p,
+	#diaspora p{
+		display: none;
 	}
 	.story{
-		margin-top: 20px;
+		height: 420px;
+		margin: 20px 0 0 0;
 	}
 	#content_thumb{
 		display: none !important;
@@ -663,7 +901,7 @@ footer a:hover{
 	}
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 680px){
 	a#facebook,
 	a#twitter,
 	a#instagram{
@@ -683,10 +921,8 @@ footer a:hover{
 }
 
 @media screen and (max-width: 480px){
-	#project_slides img#portrait{
-		width:133px;
-		height:200px;
-		margin-left:84px;
+	#project_slides li{
+		height: 200px;
 	}
 	.slide_intro h2{
 		font-size: 24px;
@@ -700,28 +936,26 @@ footer a:hover{
 		width: 300px;
 		height: 200px;
 	}
-	#portraits h2,
-	#sierra-leone h2,
-	#india h2{
-		font-size: 24px;
-		/*padding-top: 76px;*/
-		line-height: 200px;
+	.story{
+		height: 300px;
+		margin: 20px 0 0 0;
 	}
-	#editorial h2{
-		font-size: 24px;
-		padding: 40px 0 0 0;
+	#portraits h2{
+
 	}
-	#opera h2{
-		font-size: 18px;
-		line-height: 200px;
+	#ebola h2{
+		padding: 70px 20px 0 20px;
+	}
+	#sierra-leone h2{
+		padding: 70px 20px 0 20px;
 	}
 	#gambia h2{
-		font-size: 24px;
-		padding-top: 60px;
+		padding: 70px 20px 0 20px;
 	}
-	#editorial p{
-		font-size: 14px;
-		padding-bottom: 4px;
-		display: block;
+	#bekaa h2{
+		padding: 70px 20px 0 20px;
+	}
+	#diaspora h2{
+		padding: 76px 20px 0 20px;
 	}
 }
