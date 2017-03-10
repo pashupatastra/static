@@ -1,0 +1,262 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	background-color: #fffaef;
+	font-family: 'GT-Walsheim', sans-serif;
+	color: #5f2337;
+}
+a{
+	text-decoration: none;
+	color: #5f2337;
+}
+p{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.4;
+	padding: 10px 0;
+}
+h1{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-align: center;
+}
+h2{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+h3{
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 0;
+}
+section .container{
+	padding-top: 100px;
+}
+
+/* ------------------------------------------------------------ *\
+|* nav
+\* ------------------------------------------------------------ */
+
+nav{
+	position: fixed;
+	width: 100% ;
+	background: #fffaef;
+	padding: 20px;
+	z-index: 100;
+}
+nav a{
+	color: #5f2337;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 20px;
+	transition: all 0.3s ease;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+nav a:hover{
+	color: #ffc33c;
+}
+nav ul{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+nav ul li{
+	width: auto;
+	display: inline;
+	padding: 20px 10px;
+	transition: all 0.3s ease;
+}
+
+/* ------------------------------------------------------------ *\
+|* header
+\* ------------------------------------------------------------ */
+
+header{
+	width: 100%;
+	height: 100%;
+}
+header .peacock{
+	margin: 80px 0 20px 0;
+	float: left;
+	height: 540px;
+	background: url(../assets/peacock.svg) center center no-repeat;
+}
+.no-svg header .peacock{
+	background: url(../assets/peacock.png) center center no-repeat;
+}
+sup{
+	font-size: 14px;
+}
+
+/* ------------------------------------------------------------ *\
+|* sections general
+\* ------------------------------------------------------------ */
+
+section{
+	width: 100%;
+}
+section img{
+	padding-bottom: 40px;
+}
+
+/* ------------------------------------------------------------ *\
+|* the couple
+\* ------------------------------------------------------------ */
+
+#couple-image{
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/proposal.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+#couple{
+	height: 100%;
+}
+#couple iframe{
+	width: 460px;
+	height: 260px;
+}
+
+/* ------------------------------------------------------------ *\
+|* the proposal
+\* ------------------------------------------------------------ */
+
+#proposal-image{
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/proposal.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+#proposal{
+	padding-bottom: 100px;
+}
+.embed-container{
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ------------------------------------------------------------ *\
+|* the wedding
+\* ------------------------------------------------------------ */
+
+#wedding-image{
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/proposal.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+#wedding{
+	padding-bottom: 100px;
+}
+
+/* ------------------------------------------------------------ *\
+|* the reception
+\* ------------------------------------------------------------ */
+
+#reception-image{
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/proposal.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+#reception{
+	padding-bottom: 100px;
+}
+
+/* ------------------------------------------------------------ *\
+|* rsvp
+\* ------------------------------------------------------------ */
+
+#rsvp-image{
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/proposal.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+#rsvp{
+	padding-bottom: 100px;
+}
+
+/* ------------------------------------------------------------ *\
+|* contact
+\* ------------------------------------------------------------ */
+
+#contact-image{
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/proposal.png);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+#contact{
+	padding-bottom: 100px;
+}
+
+/* ------------------------------------------------------------ *\
+|* footer
+\* ------------------------------------------------------------ */
+
+footer{
+	width: 100%;
+	background-color: #5f2337;
+	padding: 40px 0 20px 0;
+}
+footer p{
+	color: #fffaef;
+	text-align: center;
+}
+footer a{
+	color: #fffaef;
+}
+footer a:hover{
+	color: #ffc33c;
+}
+
+/* ------------------------------------------------------------ *\
+|* media queries
+\* ------------------------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+	nav{
+		display: none;
+	}
+	header img{
+		padding: 20px;
+	}
+}
