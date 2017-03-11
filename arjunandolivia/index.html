@@ -10,9 +10,20 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/modernizr-latest.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/site.js"></script>
 </head>
 <body>
+
+	<form id="validate" class="container">
+		<div class="row">
+		  <p class="eight columns alpha offset-by-two">Please enter your name as it appears on your invitation</p>
+		  <div class="six columns alpha offset-by-two">
+			  <input type="text" name="fullname" placeholder="Enter your name" required/>
+			</div>
+			<div class="two columns omega">
+			  <input type="submit" value="Submit"/>
+		  </div>
+	  </div>
+	</form>
 
 	<nav>
 		<ul>
@@ -167,7 +178,8 @@
 		</div>
 	</footer>
 
-	<audio autoplay loop><source src="audio/cornershop_topknot.mp3" type="audio/mpeg"/></audio>
+	<!-- <audio autoplay loop><source src="audio/cornershop_topknot.mp3" type="audio/mpeg"/></audio> -->
+	<script type="text/javascript" src="js/site.js"></script>
 
 </body>
 </html>

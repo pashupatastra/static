@@ -40,6 +40,36 @@ section .container{
 }
 
 /* ------------------------------------------------------------ *\
+|* form validate
+\* ------------------------------------------------------------ */
+
+#validate p{
+	padding: 0 0 20px 0;
+	text-align: center;
+}
+#validate input[type=text]{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #5f2337;
+	background-color: #fffaef;
+}
+#validate input[type=submit]{
+	width: 100%;
+	border-radius: 0px;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 20px;
+	color: #fffaef;
+	background-color: #5f2337;
+	border: 1px solid #5f2337;
+	cursor: pointer;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* ------------------------------------------------------------ *\
 |* nav
 \* ------------------------------------------------------------ */
 
