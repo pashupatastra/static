@@ -22,6 +22,8 @@ $(document).ready(function() {
 	$("#proposal").hide();
 	$("#wedding-image").hide();
 	$("#wedding").hide();
+	$("#accomodation-image").hide();
+	$("#accomodation").hide();
 	$("#rsvp-image").hide();
 	$("#rsvp").hide();
 	$("#contact-image").hide();
@@ -29,6 +31,7 @@ $(document).ready(function() {
 	$("footer").hide();
 	$("body").css({"display":"flex","align-items":"center"});
 });
+
 // ceremony guestlist
 var ceremony = ["ceremony test"];
 // reception guestlist
@@ -36,10 +39,14 @@ var reception = ["reception test"];
 
 $('form').on('submit', function(e) {
 	e.preventDefault();
-	var submitted = $('input').val().toLowerCase(); // catch submit result and change to lowercase
-	var correct = ceremony.indexOf(submitted); // check submit result in ceremony guestlist
-	var correct2 = reception.indexOf(submitted); // check submit result in reception guestlist
+	// catch submit result and change to lowercase
+	var submitted = $('input').val().toLowerCase();
+	// check submit result in ceremony guestlist
+	var correct = ceremony.indexOf(submitted);
+	// check submit result in reception guestlist
+	var correct2 = reception.indexOf(submitted);
 	if (correct >= 0){
+	// show hide rules for ceremony
 		$("#validate").hide();
 		$("nav").show();
 		$("header").show();
@@ -49,6 +56,8 @@ $('form').on('submit', function(e) {
 		$("#proposal").show();
 		$("#wedding-image").show();
 		$("#wedding").show();
+		$("#accomodation-image").show();
+		$("#accomodation").show();
 		$("#rsvp-image").show();
 		$("#rsvp").show();
 		$("#contact-image").show();
@@ -56,8 +65,26 @@ $('form').on('submit', function(e) {
 		$("footer").show();
 		$("body").css({"display":"block","align-items":"stretch"});
 	} else if (correct2 >= 0) {
-		// show hide rules for reception
+	// show hide rules for reception
+		$("#validate").hide();
+		$("nav").show();
+		$("header").show();
+		$("#couple-image").show();
+		$("#couple").show();
+		$("#proposal-image").show();
+		$("#proposal").show();
+		$("#wedding-image").show();
+		$("#wedding").show();
+		$("#accomodation-image").show();
+		$("#accomodation").show();
+		$("#ceremony").hide();
+		$("#rsvp-image").show();
+		$("#rsvp").show();
+		$("#contact-image").show();
+		$("#contact").show();
+		$("footer").show();
+		$("body").css({"display":"block","align-items":"stretch"});
 	} else {
-		// show hide rules for not on the list
+	// show hide rules for not on the list
 	}
 });
