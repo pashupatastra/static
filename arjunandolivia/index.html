@@ -297,11 +297,12 @@
             </div>
             <!-- RSVP FORM -->
             <div class="row">
+            
               <div id="rsvp-ceremony" class="ten columns alpha offset-by-one">
 
                 <div id="form-messages"></div>
 
-                <form id="ajax-rsvp" method="post" action="mailer.php">
+                <form id="ajax-rsvp" method="post" action="mailer1.php">
                   <div class="field">
                     <label for="name">Please enter your name and anyone else you’re replying on behalf of.<span> *</span></label>
                     <input type="text" id="name" name="name" required>
@@ -336,28 +337,35 @@
                 </form>
 
               </div>
+
               <div id="rsvp-reception" class="ten columns alpha offset-by-one">
 
-                <!-- <form method="post" action="index.php">
-                  <label>Please enter your name and anyone else you’re replying on behalf of.*</label>
-                  <input name="sender" required>
-
-                  <label>Please enter your email address.*</label>
-                  <input name="senderEmail" required>
-
-                  <label>Can you make it to the wedding?*</label>
-                  <input type="radio" name="attend" value="reception">I will be attending the reception<br/>
-                  <input type="radio" name="attend" value="neither">I will not be able to attend
-
-                  <label>Do you have any dietary requirements? If so please let us know.</label>
-                  <textarea cols="1" rows="5" name="diet"></textarea>
-
-                  <label>Leave a message for the couple</label>
-                  <textarea rows="5" cols="20" name="message"></textarea>
-
-                  <input type="submit" name="submit">
+                <form id="ajax-rsvp" method="post" action="mailer2.php">
+                  <div class="field">
+                    <label for="name">Please enter your name and anyone else you’re replying on behalf of.<span> *</span></label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="field">
+                    <label for="email">Please enter your email address.<span> *</span></label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="field">
+                    <label for="attend">Can you make it to the wedding?<span> *</span></label>
+                    <input type="radio" name="attend" value="reception" required>I will be attending the reception<br/>
+                    <input type="radio" name="attend" value="neither">I will not be able to attend
+                  </div>
+                  <div class="field">
+                    <label for="diet">Do you have any dietary requirements? If so please let us know.</label>
+                    <textarea id="diet" name="diet"></textarea>
+                  </div>
+                  <div class="field">
+                    <label for="message">Leave a message for the couple</label>
+                    <textarea id="message" name="message"></textarea>
+                  </div>
+                  <div class="field">
+                    <button type="submit">Send</button>
+                  </div>
                 </form>
-                <?=$thankYou ?> -->
 
               </div>
             </div>
@@ -393,7 +401,7 @@
     </div>
   </footer>
 
-  <!-- <audio id="topknot" loop><source src="assets/cornershop_topknot.mp3" type="audio/mpeg"/></audio> -->
+  <audio id="topknot" loop><source src="assets/cornershop_topknot.mp3" type="audio/mpeg"/></audio>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
