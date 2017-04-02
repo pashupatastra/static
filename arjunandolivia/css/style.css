@@ -81,7 +81,7 @@ section .container{
 	border: 1px solid #5f2337;
 	cursor: pointer;
 }
-textarea:focus, input[type=text]:focus{
+textarea:focus, input[type=text]:focus, input[type=email]:focus{
     outline: 2px solid #5f2337;
 }
 #invalid{
