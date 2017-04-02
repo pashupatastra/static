@@ -1,19 +1,20 @@
 $(document).ready(function() {
 	// scolling
 	$('a[href*=#]:not([href=#])').click(function() {
-	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	    var target = $(this.hash);
-	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	    if (target.length) {
-	      $('html,body').animate({
-	        scrollTop: target.offset().top
-	      }, 800);
-	      return false;
-	    }
-	  }
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 800);
+				return false;
+			}
+		}
 	});
 	// hide content on load:
 	$("#validate").show();
+	$("#invalid").hide();
 	$("nav").hide();
 	$("header").hide();
 	$("#couple-image").hide();
@@ -33,9 +34,15 @@ $(document).ready(function() {
 });
 
 // ceremony guestlist
-var ceremony = ["ceremony test"];
+var ceremony = [
+	"name one",
+	"name two"
+];
 // reception guestlist
-var reception = ["reception test"];
+var reception = [
+	"name three",
+	"name four"
+];
 
 $('form').on('submit', function(e) {
 	e.preventDefault();
@@ -47,7 +54,9 @@ $('form').on('submit', function(e) {
 	var correct2 = reception.indexOf(submitted);
 	if (correct >= 0){
 	// show hide rules for ceremony
+		$("#topknot").trigger('play');
 		$("#validate").hide();
+		$("#invalid").hide();
 		$("nav").show();
 		$("header").show();
 		$("#couple-image").show();
@@ -60,13 +69,16 @@ $('form').on('submit', function(e) {
 		$("#accomodation").show();
 		$("#rsvp-image").show();
 		$("#rsvp").show();
+		$("#rsvp-reception").hide();
 		$("#contact-image").show();
 		$("#contact").show();
 		$("footer").show();
 		$("body").css({"display":"block","align-items":"stretch"});
 	} else if (correct2 >= 0) {
 	// show hide rules for reception
+		$("#topknot").trigger('play');
 		$("#validate").hide();
+		$("#invalid").hide();
 		$("nav").show();
 		$("header").show();
 		$("#couple-image").show();
@@ -80,11 +92,30 @@ $('form').on('submit', function(e) {
 		$("#ceremony").hide();
 		$("#rsvp-image").show();
 		$("#rsvp").show();
+		$("#rsvp-ceremony").hide();
 		$("#contact-image").show();
 		$("#contact").show();
 		$("footer").show();
 		$("body").css({"display":"block","align-items":"stretch"});
 	} else {
 	// show hide rules for not on the list
+		$("#validate").hide();
+		$("#invalid").show();
 	}
 });
+
+// vimeo / audio
+
+var iframe = document.querySelector('iframe');
+	var player = new Vimeo.Player(iframe);
+
+	player.on('play', function() {
+		$("#topknot").trigger('pause');
+	});
+	player.on('pause', function() {
+		$("#topknot").trigger('play');
+	});
+	player.on('ended', function() {
+		$("#topknot").trigger('play');
+	});
+

@@ -6,18 +6,17 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/modernizr-latest.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 
 	<form id="validate" class="container">
 		<div class="row">
-		  <p class="eight columns alpha offset-by-two">Please enter your name as it appears on your invitation</p>
+		  <p class="eight columns alpha offset-by-two">Please enter your name as it appears on the back of your invitation</p>
 		  <div class="six columns alpha offset-by-two">
-			  <input type="text" name="guestlist" placeholder="Enter your name" required/>
+			  <input type="text" name="guestlist" required/>
 			</div>
 			<div class="two columns">
 			  <input type="submit" value="Submit"/>
@@ -25,9 +24,14 @@
 	  </div>
 	</form>
 
-	<section>
-		
-	</section>
+	<div id="invalid" class="container">
+		<div class="row">
+			<div class="eight columns alpha offset-by-two">
+				<p><strong>Sorry, we can't find your name on the list</strong></p>
+				<p>If you have an invite please RSVP to <a href="mailto:arjunandolivia@gmail.com">arjunandolivia@gmail.com</a></p>
+			</div>
+		</div>
+	</div>
 
 	<nav>
 		<ul>
@@ -56,18 +60,25 @@
 			<div class="row">
 				<h2 class="ten columns alpha offset-by-one">The Couple</h2>
 			</div>
+
 			<div class="row">
-				<div class="five columns alpha offset-by-one">
-					<h3>Arjun by Olivia</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-				<div class="five columns">
+				<img class="two columns offset-by-one" src="assets/olivia.jpg"/>
+				<img class="two columns offset-by-three" src="assets/arjun.jpg"/>
+			</div>
+
+			<div class="row">
+				<div class="five columns offset-by-one">
 					<h3>Olivia by Arjun</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
+				<div class="five columns">
+					<h3>Arjun by Olivia</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 			</div>
+			
 		</div>
 	</section>
 
@@ -89,7 +100,7 @@
 			<div class="row">
 				<div class="ten columns alpha offset-by-one">
 					<div class='embed-container'>
-						<iframe src='https://player.vimeo.com/video/174272028' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						<iframe id="player1" src='https://player.vimeo.com/video/174272028' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				</div>
 				<p class="caption ten columns alpha offset-by-one">Video by Simon Winkler, ring by <a href="http://www.ayakokanari.com/" target="_blank">Ayako Kanari</a>, 40ft banner by <a href="http://bellapace.co.uk/" target="_blank">Bella Pace</a> and Harriet Badby.</p>
@@ -100,7 +111,9 @@
 	<section id="wedding-image"></section>
 
 	<section id="wedding">
+
 		<!-- ceremony details -->
+
 		<div id="ceremony" class="container">
 			<div class="row">
 				<h2 class="ten columns alpha offset-by-one">The Ceremony</h2>
@@ -119,19 +132,24 @@
 			</div>
 			<div class="row">
 				<div class="ten columns alpha omega offset-by-one">
-					<h3>Directions:</h3>
+					<h3>Directions</h3>
+					<p>Nearest train station: Wolverton (trains are faster and more frequent to Milton Keynes Central)</p>
+					<h3>From south or north via M1</h3>
 				</div>
 				<div class="five columns alpha offset-by-one">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					<p>The journey is about 7 miles and shouldn’t take more than 15 minutes or so. At Junction 14, take exit to A509 Newport Pagnell. After 1 mile, take the first exit at Tickford roundabout. After ½ mile, take the second exit at Marsh End Roundabout onto A422 Monks Way dual carriageway.</p>
+					<p>Stay on A422 Monks Way dual carriageway for approx. 2 miles, via 4 roundabouts (this is Milton Keynes…) then at the 5th roundabout take the 3rd exit onto Grafton St V6 towards Wolverton. At the next roundabout take the second exit, remaining on Grafton St V6.</p>
 				</div>
 				<div class="five columns">
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>After approx. ½ mile at next roundabout take second exit, still Grafton St , signposted Old Wolverton industrial area. Very quickly you’ll come to another roundabout. Take the first exit onto Old Wolverton Rd under a railway bridge.</p>
+					<p>Follow the road for approx. 1 mile. Look out for the Galleon pub on your right as you cross the Grand Union canal. Within 200 yards the entrance to the church car park is on your right, immediately before the Slated Row school entrance on your left and opposite Slated Row. There is a brown Holy Trinity Church roadsign pointing to the entrance.</p>
 				</div>
 			</div>
 			<div class="row">
+				<h3 class="ten columns alpha omega offset-by-one">Getting from the church to the reception venue</h3>
 				<div class="five columns alpha offset-by-one">
 					<p>Driving from the church to the reception venue takes approximately 30 minutes. Here's a map of the fastest route.</p>
-					<p>We will also be providing transport from the church to the venue. Please let us know if you will need to get on board (pun intended) when filling out the RSVP form below or by contacting us separately before 1st July 2017.</p>
+					<p>We will also be providing transport from the church to the venue. Please let us know if you will need transport when filling out the RSVP form below or by contacting us separately before 1st July 2017.</p>
 				</div>
 				<div class="five columns">
 					<div class='embed-container'>
@@ -140,7 +158,9 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- reception details -->
+
 		<div id="reception" class="container">
 			<div class="row">
 				<h2 class="ten columns alpha offset-by-one">The Reception</h2>
@@ -159,16 +179,18 @@
 			</div>
 			<div class="row">
 				<div class="ten columns alpha offset-by-one">
-					<h3>Directions:</h3>
+					<h3>Directions</h3>
 					<p>Nearest train station: Bicester North</p>
 				</div>
 				<div class="five columns alpha offset-by-one">
-					<p><strong>From London:</strong> Take junction 9 off the M40. At the roundabout above the motorway, head towards Bicester on the A41. At the Esso petrol station roundabout, turn right. You are now on the Bicester bypass.</p>
+					<h3>From London</h3>
+					<p>Take junction 9 off the M40. At the roundabout above the motorway, head towards Bicester on the A41. At the Esso petrol station roundabout, turn right. You are now on the Bicester bypass.</p>
 					<p>At the next roundabout, take the second left towards Launton. Follow signs to Launton. In Launton, at the crossroads, turn left opposite The Bull Inn, this should be marked Poundon.</p>
 					<p>Leave the village, going over a railway track about a mile out, and then go straight over the next cross roads. About 3 miles from there, after going up a steep hill and past a couple of farm entrances, we are on your right with black gates and a lime tree avenue.</p>
 				</div>
 				<div class="five columns">
-					<p><strong>From Buckingham:</strong> On the Buckingham / Brackley ringroad, follow signs to Gawcott. Continue into Gawcott and turn left at the T-junction, signed towards Marsh Gibbon / Twyford. Continue until you past the Seven Stars pub on your right, where you then take the next right to Twyford.</p>
+					<h3>From Buckingham</h3>
+					<p>On the Buckingham / Brackley ringroad, follow signs to Gawcott. Continue into Gawcott and turn left at the T-junction, signed towards Marsh Gibbon / Twyford. Continue until you past the Seven Stars pub on your right, where you then take the next right to Twyford.</p>
 					<p>Turn right into Twyford and continue through the village. About 1 mile out of Twyford, turn right towards Poundon, then take the left by the Sow and Pigs Pub. Drive up the village.</p>
 					<p>Poundon House is the last house on the left with the black iron gates and limetree avenue.</p>
 				</div>
@@ -270,56 +292,50 @@
 	<section id="rsvp-image"></section>
 
 	<section id="rsvp">
-		<div class="container">
-			<div class="row">
-				<h2 class="ten columns alpha offset-by-one">RSVP</h2>
-			</div>
-				<!-- RSVP form -->
-			<form>
-				<div class="row">
-					<div class="ten columns alpha offset-by-one">
-						<p>Please enter your name and anyone else you’re replying on behalf of:</p>
-						<input type="text" name="fullname" placeholder="Name(s)" required/>
-					</div>
-				</div>
-				<div class="row">
-					<div class="ten columns alpha offset-by-one">
-						<p>Can you make it to the wedding?</p>
-						<input type="radio" name="attending" value="Ceremony"/>I will be attending the ceremony and reception<br/>
-						<input type="radio" name="attending" value="Both"/>I will be attending the ceremony only<br/>
-						<input type="radio" name="attending" value="Reception"/>I will be attending the reception only<br/>
-						<input type="radio" name="attending" value="Neither"/>I will not be able to attend
-					</div>
-				</div>
-				<div class="row">
-					<div class="ten columns alpha offset-by-one">
-						<p>Do you have any dietary requirements?</p>
-						<input type="radio" name="diet" value="Yes"/>Yes<br/>
-						<input type="radio" name="diet" value="No"/>No<br/>
-						<textarea name="diet" cols="1" rows="5"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="ten columns alpha offset-by-one">
-						<p>Will you require transport from the church to the reception venue?</p>
-						<input type="radio" name="transport" value="Yes"/>Yes<br/>
-						<input type="radio" name="transport" value="No"/>No<br/>
-					</div>
-				</div>
-				<div class="row">
-					<div class="ten columns alpha offset-by-one">
-						<p>Leave a message for the couple</p>
-						<textarea name="diet" cols="1" rows="5"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="two columns alpha offset-by-one">
-						<input type="submit" value="Submit"/>
-					</div>
-				</div>
-			</form>
-		</div>
-	</section>
+        <div class="container">
+            <div class="row">
+                <h2 class="ten columns alpha offset-by-one">RSVP</h2>
+            </div>
+            <!-- RSVP FORM -->
+            <div>
+              <?=$thankYou ?>
+              <form id="rsvp-ceremony" class="ten columns alpha offset-by-one">
+								<label>Please enter your name and anyone else you’re replying on behalf of.*</label>
+								<input type="text" name="sender" required/>
+								<label>Please enter your email address.*</label>
+								<input type="text" name="senderEmail" required/>
+								<label>Can you make it to the wedding?*</label>
+								<input type="radio" name="attending" value="both"/>I will be attending the ceremony and reception<br/>
+								<input type="radio" name="attending" value="ceremony"/>I will be attending the ceremony only<br/>
+								<input type="radio" name="attending" value="reception"/>I will be attending the reception only<br/>
+								<input type="radio" name="attending" value="neither"/>I will not be able to attend
+								<label>Do you have any dietary requirements? If so please let us know.</label>
+								<textarea cols="1" rows="5" name="diet"></textarea>
+								<label>Will you require transport from the church to the reception venue?*</label>
+								<input type="radio" name="transport" value="yes"/>Yes<br/>
+								<input type="radio" name="transport" value="no"/>No
+								<label>Leave a message for the couple</label>
+								<textarea cols="1" rows="5" name="message"></textarea>
+								<input type="submit" name="submit" value="Submit"/>
+							</form>
+              <form id="rsvp-reception" class="ten columns alpha offset-by-one">
+                <label>Please enter your name and anyone else you’re replying on behalf of.*</label>
+                <input type="text" name="sender" required/>
+                <label>Please enter your email address.*</label>
+                <input type="text" name="senderEmail" required/>
+                <label>Can you make it to the wedding?*</label>
+                <input type="radio" name="attending" value="reception"/>I will be attending the reception<br/>
+                <input type="radio" name="attending" value="neither"/>I will not be able to attend
+                <label>Do you have any dietary requirements? If so please let us know.</label>
+                <textarea cols="1" rows="5" name="diet"></textarea>
+                <label>Leave a message for the couple</label>
+                <textarea cols="1" rows="5" name="message"></textarea>
+                <input type="submit" name="submit" value="Submit"/>
+              </form>
+            </div>
+            <!-- RSVP FORM ENDS -->
+        </div>
+    </section>
 
 	<section id="contact-image"></section>
 
@@ -333,7 +349,7 @@
 					<p>If you need to contact us, have any questions about the wedding or would rather RSVP by email, phone or post then please use the following details:</p>
 				</div>
 				<div class=" five columns omega">
-					<p>Email: <br/>arjunandolivia@gmail.com</p>
+					<p>Email: <br/><a href="mailto:arjunandolivia@gmail.com">arjunandolivia@gmail.com</a></p>
 					<p>Phone: <br/>07528139796 (Arjun) <br/>07769178640 (Olivia)</p>
 					<p>Post: <br/>4 Melrose Avenue, London SW16 4QU</p>
 				</div>
@@ -349,7 +365,8 @@
 		</div>
 	</footer>
 
-	<!-- <audio autoplay loop><source src="audio/cornershop_topknot.mp3" type="audio/mpeg"/></audio> -->
+	<audio id="topknot" loop><source src="assets/cornershop_topknot.mp3" type="audio/mpeg"/></audio>
+	<script src="https://player.vimeo.com/api/player.js"></script>
 	<script type="text/javascript" src="js/site.js"></script>
 
 </body>
