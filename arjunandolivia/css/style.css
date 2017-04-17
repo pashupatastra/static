@@ -431,6 +431,9 @@ footer span.break{
 	header .peacock{
 		height: 393px;
 	}
+	nav{
+		display: none !important;
+	}
 }
 
 @media only screen and (max-width: 940px) {
@@ -443,9 +446,6 @@ footer span.break{
 }
 
 @media only screen and (max-width: 768px) {
-	nav{
-		display: none !important;
-	}
 	#audio-controls{
 		display: none !important;
 	}
