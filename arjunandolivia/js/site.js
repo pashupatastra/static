@@ -23,7 +23,7 @@ $(document).ready(function() {
 	$("#couple").hide();
 	$("#proposal").hide();
 	$("#wedding").hide();
-	$("#accomodation").hide();
+	$("#accommodation").hide();
 	$("#rsvp").hide();
 	$("#gifts").hide();
 	$("footer").hide();
@@ -232,7 +232,7 @@ $('#validate').on('submit', function(e) {
 		$("#couple").show();
 		$("#proposal").show();
 		$("#wedding").show();
-		$("#accomodation").show();
+		$("#accommodation").show();
 		$("#rsvp").show();
 		$("#gifts").show();
 		$("footer").show();
@@ -248,7 +248,7 @@ $('#validate').on('submit', function(e) {
 		$("#couple").show();
 		$("#proposal").show();
 		$("#wedding").show();
-		$("#accomodation").show();
+		$("#accommodation").show();
 		$("#ceremony").hide();
 		$("#rsvp").show();
 		$("#gifts").show();

@@ -293,22 +293,22 @@ section.image-container{
 }
 
 /* ------------------------------------------------------------ *\
-|* accomodation
+|* accommodation
 \* ------------------------------------------------------------ */
 
-#accomodation-image{
-	background-image: url(../assets/accomodation.jpg);
+#accommodation-image{
+	background-image: url(../assets/accommodation.jpg);
 }
-#accomodation{
+#accommodation{
 	padding-bottom: 100px;
 }
-#accomodation h3{
+#accommodation h3{
 	padding: 10px 0 0 0;
 }
-#accomodation a{
+#accommodation a{
 	text-decoration: underline;
 }
-div.accomodation{
+div.accommodation{
 	padding-top: 20px;
 }
 
@@ -455,7 +455,7 @@ footer span.break{
 	#couple,
 	#proposal,
 	#wedding,
-	#accomodation,
+	#accommodation,
 	#rsvp,
 	#contact{
 		padding-bottom: 40px;
