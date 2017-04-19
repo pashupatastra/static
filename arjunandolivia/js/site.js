@@ -251,6 +251,7 @@ $('#validate').on('submit', function(e) {
 		$("#accommodation").show();
 		$("#ceremony").hide();
 		$("#rsvp").show();
+		$(".transport").hide();
 		$("#gifts").show();
 		$("footer").show();
 		$("body").css({"display":"block","align-items":"stretch"});
