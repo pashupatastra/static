@@ -148,7 +148,7 @@ var ceremony = [
 	"jolene pringle",
 	"matt pringle",
 	"matthew pringle",
-	"vasiliki antonopolou",
+	"vasiliki antonopoulou",
 	"kate pearson",
 	"manuel almansa",
 	"lucy howe",
