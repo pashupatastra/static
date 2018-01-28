@@ -1,0 +1,147 @@
+@font-face{
+	font-family:'GT-Walsheim';
+	src:url('../assets/GT-Walsheim.woff') format('woff'),
+	url('../assets/GT-Walsheim.ttf') format('truetype'),
+	url('../assets/GT-Walsheim.svg') format('svg');
+	font-weight:400;
+	font-style:normal;
+}
+@font-face{
+	font-family:'GT-Walsheim';
+	src:url('../assets/GT-Walsheim-Bold.woff') format('woff'),
+	url('../assets/GT-Walsheim-Bold.ttf') format('truetype'),
+	url('../assets/GT-Walsheim-Bold.svg') format('svg');
+	font-weight:700;
+	font-style:normal;
+}
+@font-face{
+	font-family:'GT-Walsheim';
+	src:url('../assets/gt-walsheim-regular-oblique-web.woff') format('woff'),
+	url('../assets/gt-walsheim-regular-oblique-web.ttf') format('truetype'),
+	url('../assets/gt-walsheim-regular-oblique-web.svg') format('svg');
+	font-weight:400;
+	font-style:italic;
+}
+html, body{
+	height: 100%;
+}
+body{
+	background-color: #fffaef;
+	font-family: 'GT-Walsheim', Helvetica, sans-serif;
+	color: #5f2337;
+}
+h1{
+	font-size: 48px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 10px 0;
+}
+h2{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+	font-style: italic;
+}
+h3{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+p{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	font-weight: 400;
+	color: #5f2337;
+	transition: all 0.5s ease;
+}
+a:hover{
+	opacity: 0.5;
+}
+sup{
+	font-size: 14px;
+}
+
+/* ------------------------------------------------------------ *\
+|* header
+\* ------------------------------------------------------------ */
+
+header{
+	padding: 40px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.peacock{
+	background: url(../assets/peacock.svg) center center no-repeat;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------ *\
+|* gallery
+\* ------------------------------------------------------------ */
+
+section{
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 20px;
+	-webkit-column-width: 300px;
+		 -moz-column-width: 300px;
+					column-width: 300px;
+}
+section a{
+	max-width: 300px;
+	margin-bottom: 20px;
+}
+.col{
+	display: inline-block;
+}
+
+/* ------------------------------------------------------------ *\
+|* footer
+\* ------------------------------------------------------------ */
+
+footer{
+	width: 100%;
+	background-color: #5f2337;
+	color: #fffaef;
+	padding: 40px 0;
+}
+footer div{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+footer a{
+	color: #fffaef;
+}
+
+/* ------------------------------------------------------------ *\
+|* media queries
+\* ------------------------------------------------------------ */
+
+@media only screen and (max-width: 990px) {
+	section{
+		max-width: 660px;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	section{
+		max-width: 100%;
+		-webkit-column-width: 100%;
+			 -moz-column-width: 100%;
+						column-width: 100%;
+	}
+	section a{
+		max-width: 100%;
+	}
+}
