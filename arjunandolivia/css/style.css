@@ -84,6 +84,9 @@ header{
 	height: 200px;
 	margin-bottom: 20px;
 }
+.no-svg .peacock{
+	background: url(../assets/peacock.png) center center no-repeat;
+}
 
 /* ------------------------------------------------------------ *\
 |* gallery
