@@ -131,7 +131,7 @@ footer a{
 |* media queries
 \* ------------------------------------------------------------ */
 
-/*@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 990px) {
 	section{
 		max-width: 660px;
 	}
@@ -147,4 +147,4 @@ footer a{
 	section a{
 		max-width: 100%;
 	}
-}*/
+}
